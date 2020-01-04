@@ -1,0 +1,23 @@
+type SharedDetail {
+  username: String!
+  value: Float!
+}
+type Ads @model {
+  id: ID!
+  name: String!
+  luckyMoneys: [LuckyMoney] @connection(name: "AdsLuckyMoney")
+}
+type Balance @model @key(fields: ["value"]) {
+  username: ID!
+  value: Float!
+}
+type LuckyMoney @model {
+  owner: ID!
+  ads: Ads @connection(name: "AdsLuckyMoney")
+  value: Float!
+  bonus: Float
+  scannedByOwner: Boolean
+  sharedByOwnder: Boolean
+  sharedTimes: Int!
+  sharedDetails: [SharedDetail]
+}
