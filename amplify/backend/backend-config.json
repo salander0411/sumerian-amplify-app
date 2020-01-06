@@ -16,6 +16,10 @@
 		"demo": {
 			"service": "Sumerian",
 			"providerPlugin": "awscloudformation"
+		},
+		"LuckyMoneyXIN": {
+			"service": "Sumerian",
+			"providerPlugin": "awscloudformation"
 		}
 	}
 }

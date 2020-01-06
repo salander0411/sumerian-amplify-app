@@ -11,19 +11,24 @@ const awsmobile = {
     "aws_mobile_analytics_app_region": "us-west-2",
     "XR": {
         "scenes": {
-            "LuckyMoneyAR": {
+            "demo": {
                 "sceneConfig": {
                     "sceneId": "aecd5ba977214a3aa1cea6d7375d3ad0.scene",
                     "region": "us-west-2",
                     "projectName": "Lucky-Money",
                     "url": "https://sumerian.us-west-2.amazonaws.com/20180801/projects/Lucky-Money/release/authTokens?sceneId=aecd5ba977214a3aa1cea6d7375d3ad0.scene"
                 }
+            },
+            "LuckyMoneyXIN": {
+                "sceneConfig": {
+                    "sceneId": "3c3ab932a21842e7bda8bd40209966c5.scene",
+                    "region": "us-west-2",
+                    "projectName": "Lucky-Money",
+                    "url": "https://sumerian.us-west-2.amazonaws.com/20180801/projects/Lucky-Money/release/authTokens?sceneId=3c3ab932a21842e7bda8bd40209966c5.scene"
+                }
             }
         }
-    },
-    "aws_appsync_graphqlEndpoint": "https://lgvif4sta5btpay4rti4hawdxe.appsync-api.us-west-2.amazonaws.com/graphql",
-    "aws_appsync_region": "us-west-2",
-    "aws_appsync_authenticationType": "AMAZON_COGNITO_USER_POOLS"
+    }
 };
 
 
